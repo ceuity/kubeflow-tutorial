@@ -1,1 +1,1 @@
-kfctl delete -f kfctl_istio_dex.yaml
+kfctl delete -f kfctl_istio_dex.v1.2.0.yaml
