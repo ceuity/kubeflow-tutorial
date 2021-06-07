@@ -71,3 +71,7 @@ kubectl port-forward svc/istio-ingressgateway -n istio-system 8080:80
 ```
 
 istio_dex의 경우 초기 아이디와 비밀번호는 `admin@kubeflow.org / 12341234` 이다. 유저를 추가하는 방법에 대해서는 [document](https://v1-2-branch.kubeflow.org/docs/started/k8s/kfctl-istio-dex/#add-static-users-for-basic-auth)에 나와있다.
+
+[localhost:8080](http://localhost:8080) 으로 접속하여 Kubeflow Dashboard에 접속했다면 설치 완료!
+
+설치 완료 후 초기 컨테이너 image를 pull하고 running 하느라 시간이 다소 걸릴 수 있다. `kubectl get pods -n kubeflow` 에서 모든 pods 가 생성되어 동작할 때 까지 기다린다.
